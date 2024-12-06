@@ -1,0 +1,356 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.divider {
+  height: 3px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+/* Header Logo */
+
+header > a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 5px 15px auto 15px;
+    z-index: 999;
+    position: absolute;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0  0 auto 0;
+    background-color: #A5B68D;
+    padding: 1.5em;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 2em;
+    z-index: 999;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #AA5486;
+    color: white;
+    padding: 0.75em;
+    border-radius: 15px;
+}
+
+nav > ul > li > a:hover {
+    text-decoration: underline;
+    color: #AA5486;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+/* Hero */
+.heroes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1em;
+    padding: 2em;
+    margin: 5em 2em 5em 2em;
+    border-radius: 8px;
+    height: 65vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroes video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: black;
+}
+
+video~h1 {
+    color: white;
+    z-index: 999;
+    position: relative;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+video~p {
+    color: white;
+    z-index: 999;
+    position: relative;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+/* cards */
+
+.service-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5em;
+}
+
+.card-1, .card-2, .card-3 {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 8px;
+    background-color:#A5B68D;
+    margin: 0 1em 0 1em;
+    gap: 1em;
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover {
+    scale: 1.1;
+    transition: 0.5s ease-in;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-1 > img, .card-2 > img, .card-3 > img {
+    border-radius: 8px;
+}
+
+.card-1 > h2, .card-2 > h2, .card-3 > h2 {
+    color:white;
+}
+
+.card-1 > p, .card-2 > p, .card-3 > p {
+    color:white;
+}
+
+.card-1 > a, .card-2 > a, .card-3 > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #AA5486;
+    width: 35%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* welcome section */
+
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 20px;
+}
+
+.description {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Discount banner */
+
+.discount-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 2em;
+}
+
+.discount-banner > h3 {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.discount-banner > img {
+    border-radius: 12px;
+}
+
+.discount-banner > img:hover {
+    scale: 1;
+    transition: 0.5s ease-in;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.discount-banner > h3, .discount-banner > p {
+    color: white;
+    margin: 0.5em;
+    text-align: center;
+    z-index: 999;
+}
+
+/* founder section */
+.owner-section {
+    float: right; 
+    width: 300px; 
+    background-color: #A5B68D; 
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.owner-section > h2 {
+    text-align: center;
+    margin: 0.5em;
+    color: white;
+}
+.owner-section > img {
+    border-radius: 8px;
+}
+
+.owner-section > p {
+    color: white;
+}
+
+/* article section */
+
+.article-section {
+    margin: 7em 2em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-1, .block-2, .block-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color:#A5B68D;
+    gap: 1em;
+}
+
+/* membership form */
+
+.membership-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0 2em 0;
+    padding: 2em;
+    border-radius: 8px;
+    background-color:#A5B68D;
+    color: white;
+    gap: 1em;
+}
+
+.membership-form > img {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    opacity: 50%;
+}
+/* Footer Styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  footer .footer-logo {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  footer .footer-logo img {
+    max-width: 150px;
+  }
+  
+  footer .footer-contact,
+  footer .footer-hours,
+  footer .footer-news {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  footer h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  footer p {
+    margin: 5px 0;
+    font-size: 0.95em;
+  }
+  
+  footer .footer-news ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer .footer-news li {
+    margin-bottom: 10px;
+  }
+  
+  footer .footer-news a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  footer .footer-news a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    footer .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    footer .footer-logo,
+    footer .footer-contact,
+    footer .footer-hours,
+    footer .footer-news {
+      min-width: 100%;
+      text-align: center;
+    }
+  }
+  
